@@ -1,0 +1,17 @@
+Query1:
+SELECT Name, Surname
+FROM Assistant
+
+Query2:
+SELECT Name, Surname
+FROM Assistant
+WHERE Surname LIKE "%AN%"
+
+Query3:
+DELETE FROM Lecture
+WHERE LectureName = "CSE000"
+
+Query4:
+SELECT Name, Surname
+FROM Assistant INNER JOIN Lecture on Assistant.AssistantID = Lecture.AssistantID
+WHERE LectureName = "BIL107"
